@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminActivity">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/ic_baseline_add"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/black"
+        app:layout_anchor="@id/bottomAppbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomAppbar"
+        android:layout_width="391dp"
+        android:layout_height="71dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="225dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/see_num_logins"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="0dp"
+            app:menu="@menu/report">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/change_frequency"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            app:menu="@menu/change_frequency" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigationview4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="300dp"
+            app:menu="@menu/all_buyer" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/adminhome"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="200dp"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Admin panel"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomAppbar1"
+        android:layout_width="393dp"
+        android:layout_height="71dp"
+        android:layout_gravity="bottom"
+
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/all_products_price"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="0dp"
+            app:menu="@menu/total_price">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/all_products_admin"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            app:menu="@menu/all_products" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/top_sellers"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="200dp"
+            app:menu="@menu/top_seller">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/name_num_sellers"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="300dp"
+            app:menu="@menu/all_seller" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="392dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/mount" />
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_black" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

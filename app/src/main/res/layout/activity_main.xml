@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".Productdetails">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_more" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="408dp"
+        android:layout_height="577dp"
+        android:background="@drawable/detail_page_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="255dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Tick Store"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buyer_btn"
+            android:layout_width="192dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="316dp"
+            android:background="@drawable/main_btn"
+            android:fontFamily="@font/rubik_bold"
+            android:text="buyers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/admin_enter"
+            android:layout_width="101dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="134dp"
+            android:text="enter as admin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contact_main" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/seller_btn"
+            android:layout_width="189dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="232dp"
+            android:background="@drawable/main_btn"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Sellers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/contact_main"
+            android:layout_width="208dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="452dp"
+            android:background="@drawable/main_btn"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Contact with us"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

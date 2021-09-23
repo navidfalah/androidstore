@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.products_admin_Activity">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomAppbar1"
+        android:layout_width="392dp"
+        android:layout_height="67dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_recycler">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/all_products_price"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="0dp"
+            app:menu="@menu/total_price">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/all_products_admin"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            app:menu="@menu/all_products" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/top_sellers"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="200dp"
+            app:menu="@menu/top_seller" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/name_num_sellers"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="300dp"
+            app:menu="@menu/all_seller" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_black" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomAppbar"
+        android:layout_width="391dp"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/bottomAppbar1">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/see_num_logins"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="0dp"
+            app:menu="@menu/report">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/change_frequency"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            app:menu="@menu/change_frequency" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/adminhome"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="200dp"
+            app:menu="@menu/bottom_nav_menu" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigationview4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="300dp"
+            app:menu="@menu/all_buyer" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="products num"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="52dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/ic_filter" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_recycler"
+        android:layout_width="296dp"
+        android:layout_height="425dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:listitem="@layout/products_row_item" />
+
+    <TextView
+        android:id="@+id/num_products"
+        android:layout_width="137dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:text="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

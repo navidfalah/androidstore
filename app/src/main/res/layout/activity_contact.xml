@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contact1"
+    tools:context=".ContactActivity">
+
+    <TextView
+        android:id="@+id/title_conatct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="navid falah"
+        android:textSize="46dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="210dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_telegram"
+        android:layout_width="400dp"
+
+        android:layout_height="60dp"
+        android:layout_below="@+id/title_conatct"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableRight="@drawable/telegram"
+        android:text="telegram"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:id="@+id/button_whatsapp"
+        android:layout_height="60dp"
+        android:drawableRight="@drawable/whatsapp"
+        android:text="whatsapp"
+        android:textAlignment="textStart"
+        android:layout_marginRight="100dp"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_bg"
+        android:layout_below="@+id/button_telegram"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button_linkedin"
+        android:drawableRight="@drawable/linked2"
+        android:textAlignment="textStart"
+        android:layout_marginRight="100dp"
+        android:layout_height="60dp"
+        android:text="linked in"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_bg"
+        android:layout_below="@+id/button_whatsapp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="37dp"
+        android:layout_toStartOf="@+id/title_conatct"
+        android:background="@drawable/empty"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_white" />
+
+</RelativeLayout>

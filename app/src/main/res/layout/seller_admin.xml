@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="450dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/prod_image"
+            android:layout_width="match_parent"
+            android:layout_height="255dp"
+            android:adjustViewBounds="true"
+            android:rotation="0"
+            android:rotationX="0"
+            android:scaleType="fitXY"
+            android:transitionName="image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:srcCompat="@color/blue1" />
+
+        <TextView
+            android:id="@+id/prod_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="678dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="250 ml"
+            android:textColor="@android:color/background_dark"
+            android:textSize="17sp"
+            app:layout_constraintHorizontal_bias="0.296" />
+
+        <TextView
+            android:id="@+id/prod_name"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_below="@+id/prod_image"
+            android:layout_alignEnd="@+id/prod_image"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="-3dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="ali hojati"
+            android:textColor="@android:color/background_dark"
+            android:textSize="22sp"
+            app:layout_anchor="@+id/prod_image"
+            app:layout_anchorGravity="center" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prod_name"
+            android:layout_marginTop="22dp"
+            android:text="phone" />
+
+        <TextView
+            android:id="@+id/prod_phone"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prod_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="50dp"
+            android:text="09127848756" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

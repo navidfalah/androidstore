@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.totalpriceActivity">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="369dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_black" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_alignStart="@+id/total_price_string"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="-76dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageView4">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/see_num_logins"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="0dp"
+            app:menu="@menu/login">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/change_frequency"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            app:menu="@menu/change_frequency" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/adminhome"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="200dp"
+            app:menu="@menu/bottom_nav_menu" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigationview4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="300dp"
+            app:menu="@menu/admin_info" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/total_price_string"
+        android:layout_width="166dp"
+        android:layout_height="86dp"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="200dp"
+        android:text="total price"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="97dp" />
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="170dp"
+        android:layout_height="84dp"
+        android:layout_below="@+id/total_price_string"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-89dp"
+        android:layout_toRightOf="@+id/total_price_string"
+        android:text="1000"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="97dp" />
+
+</RelativeLayout>

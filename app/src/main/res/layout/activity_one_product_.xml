@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buyer.one_product_Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".buyer.one_product_Activity"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <TextView
+            android:id="@+id/seller_name_product"
+            android:layout_width="148dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="seller name"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category_product" />
+
+        <TextView
+            android:id="@+id/prod_seller_name"
+            android:layout_width="193dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/prod_name"
+            android:layout_alignEnd="@+id/prod_name"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="ali"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_anchorGravity="start|top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prod_category" />
+
+        <ImageView
+            android:id="@+id/prod_image"
+            android:layout_width="362dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:rotation="0"
+            android:rotationX="0"
+            android:scaleType="fitXY"
+            android:transitionName="image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@color/blue1" />
+
+        <TextView
+            android:id="@+id/prod_name"
+            android:layout_width="407dp"
+            android:layout_height="58dp"
+            android:layout_below="@+id/prod_image"
+            android:layout_alignEnd="@+id/prod_image"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Japanese Cherry Blossom"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="22sp"
+            app:layout_anchor="@+id/prod_image"
+            app:layout_anchorGravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prod_image" />
+
+        <TextView
+            android:id="@+id/prod_category"
+            android:layout_width="196dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/prod_name"
+            android:layout_alignEnd="@+id/prod_name"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="car"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_anchor="@+id/textView9"
+            app:layout_anchorGravity="start|top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prod_price" />
+
+        <TextView
+            android:id="@+id/prod_price"
+            android:layout_width="195dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/prod_name"
+            android:layout_alignEnd="@+id/prod_name"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="$ 15.00"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_anchor="@+id/textView9"
+            app:layout_anchorGravity="start|top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prod_name" />
+
+        <TextView
+            android:id="@+id/price_product"
+            android:layout_width="139dp"
+            android:layout_height="42dp"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="price"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prod_name" />
+
+        <TextView
+            android:id="@+id/category_product"
+            android:layout_width="144dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/prod_price"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="category"
+            android:textSize="20sp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price_product" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/update_product_myshop"
+            android:layout_width="204dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/click_btn"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Call"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seller_name_product" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomAppbar"
+            android:layout_width="414dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="@+id/imageView4">
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomnavigationview1"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="0dp"
+                app:menu="@menu/menu2">
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomnavigationview2"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="100dp"
+                app:menu="@menu/category" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomnavigationview3"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="200dp"
+                app:menu="@menu/bottom_nav_menu" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomnavigationview4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="300dp"
+                app:menu="@menu/menu3" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="384dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_black" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

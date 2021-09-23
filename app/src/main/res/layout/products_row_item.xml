@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="450dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/prod_image"
+            android:layout_width="match_parent"
+            android:layout_height="254dp"
+            android:adjustViewBounds="true"
+            android:rotation="0"
+            android:rotationX="0"
+            android:scaleType="fitXY"
+            android:transitionName="image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:shapeAppearanceOverlay="@style/roundimageview"
+            app:srcCompat="@color/blue1" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prod_name"
+            android:layout_alignStart="@+id/prod_name"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Price" />
+
+        <TextView
+            android:id="@+id/prod_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="678dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="250 ml"
+            android:textColor="@android:color/background_dark"
+            android:textSize="17sp"
+            app:layout_constraintHorizontal_bias="0.296" />
+
+        <TextView
+            android:id="@+id/prod_price"
+            android:layout_width="143dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/prod_name"
+            android:layout_alignEnd="@+id/prod_name"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="25dp"
+
+
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/textView9"
+            android:fontFamily="@font/rubik_bold"
+            android:text="$ 15.00"
+            android:textColor="#42995C"
+            android:textSize="17sp"
+            app:layout_anchor="@+id/textView9"
+            app:layout_anchorGravity="start|top"
+            app:layout_constraintBottom_toBottomOf="@+id/prod_qty"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/prod_qty" />
+
+        <TextView
+            android:id="@+id/prod_name"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_below="@+id/prod_image"
+            android:layout_alignEnd="@+id/prod_image"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="-3dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Japanese Cherry Blossom"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_anchor="@+id/prod_image"
+            app:layout_anchorGravity="center" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

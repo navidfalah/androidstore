@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tick">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bg_icon"
+        android:label="TICK Store"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TICK">
+        <activity android:name=".root.root_change_roots_Activity"></activity>
+        <activity android:name=".root.all_admin_Activity" />
+        <activity android:name=".root.all_root_Activity" />
+        <activity android:name=".admin.admin_buyers_report_Activity" />
+        <activity android:name=".admin.admin_sellers_report_Activity" />
+        <activity android:name=".admin.admin_reports_Activity" />
+        <activity android:name=".admin.change_all_products_Activity" />
+        <activity android:name=".buyer.report_seller_Activity" />
+        <activity android:name=".seller.Report_buyer_Activity" />
+        <activity android:name=".buyer.CategoryActivity" />
+        <activity android:name=".buyer.chat_buyer_Activity" />
+        <activity android:name=".seller.Chat_seller_Activity" />
+        <activity android:name=".seller.wallet_seller_Activity" />
+        <activity android:name=".root.root_change_admins_Activity" />
+        <activity android:name=".root.root_register_Activity" />
+        <activity android:name=".root.root_login_Activity" />
+        <activity android:name=".root.root_home_Activity" />
+        <activity android:name=".admin.all_buyer_Activity" />
+        <activity android:name=".admin.all_seller_Activity" />
+        <activity android:name=".seller.seller_Category_result_Activity" />
+        <activity android:name=".seller.seller_info_Activity" />
+        <activity android:name=".seller.seller_setting_Activity" />
+        <activity android:name=".seller.category_seller_Activity" />
+        <activity android:name=".buyer.setting_buyer_Activity" />
+        <activity android:name=".buyer.buyer_Category_result_Activity" />
+        <activity android:name=".buyer.Search_result_Activity" />
+        <activity android:name=".admin.Change_frequency_Activity" />
+        <activity android:name=".admin.num_logins_Activity" />
+        <activity android:name=".admin.topSellers_admin_Activity" />
+        <activity android:name=".admin.products_admin_Activity" />
+        <activity android:name=".admin.totalpriceActivity" />
+        <activity android:name=".seller.Seller_registerActivity" />
+        <activity android:name=".seller.Seller_login_Activity" />
+        <activity android:name=".admin.RegisterAdminActivity" />
+        <activity android:name=".admin.AdminLoginActivity" />
+        <activity android:name=".admin.AdminActivity" />
+        <activity android:name=".admin.imgActivity" />
+        <activity android:name=".seller.myshop_change_productActivity" />
+        <activity android:name=".buyer.expensiveproductsActivity" />
+        <activity android:name=".buyer.cheapproductsActivity" />
+        <activity android:name=".seller.MyShopActivity" />
+        <activity android:name=".buyer.one_product_Activity" />
+        <activity android:name=".Productdetails" />
+        <activity android:name=".buyer.User_info_Activity" />
+        <activity android:name=".buyer.CategoryItemsActivity" />
+        <activity android:name=".seller.imgActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".buyer.RegisterActivity" />
+        <activity android:name=".buyer.HomeActivity" />
+        <activity android:name=".buyer.LoginActivity" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

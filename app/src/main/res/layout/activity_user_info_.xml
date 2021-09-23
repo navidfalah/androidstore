@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buyer.User_info_Activity">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="380dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_black" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageView4">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigationview1"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="0dp"
+            app:menu="@menu/menu2">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigationview2"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            app:menu="@menu/category" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigationview3"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="200dp"
+            app:menu="@menu/bottom_nav_menu" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigationview4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="300dp"
+            app:menu="@menu/menu3" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="143dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:fontFamily="@font/rubik_bold"
+        android:background="@drawable/click_btn"
+        android:textColor="@color/white"
+        android:text="pick image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="177dp"
+        android:layout_height="181dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/blue1" />
+
+    <EditText
+        android:id="@+id/name_product"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:fontFamily="@font/rubik_bold"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/price_product"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/name_product"
+        android:layout_alignTop="@+id/name_product"
+        android:layout_alignEnd="@+id/name_product"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:fontFamily="@font/rubik_bold"
+        android:hint="password"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/seller_name_product"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/seller_name_product"
+        app:layout_constraintTop_toBottomOf="@+id/seller_name_product" />
+
+    <EditText
+        android:id="@+id/seller_name_product"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/price_product"
+        android:layout_alignStart="@+id/price_product"
+        android:layout_alignEnd="@+id/price_product"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/rubik_bold"
+        android:hint="email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/phone_number_seller_product"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/phone_number_seller_product"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number_seller_product" />
+
+    <EditText
+        android:id="@+id/phone_number_seller_product"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/seller_name_product"
+        android:layout_alignStart="@+id/seller_name_product"
+        android:layout_alignEnd="@+id/seller_name_product"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/rubik_bold"
+        android:hint="phone"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/name_product"
+        app:layout_constraintTop_toBottomOf="@+id/name_product" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_submit_product"
+        android:layout_width="214dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/phone_number_seller_product"
+        android:layout_alignStart="@+id/phone_number_seller_product"
+        android:layout_alignEnd="@+id/phone_number_seller_product"
+        android:layout_marginTop="596dp"
+        android:background="@drawable/click_btn"
+        android:textColor="@color/white"
+        android:fontFamily="@font/rubik_bold"
+        android:text="change"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
